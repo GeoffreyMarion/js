@@ -14,30 +14,24 @@ const button=document.querySelector("input.button");
 
 const info=document.querySelector("div.info");
 
-/*
+
 //Hide and show calc (pas fonctionnel)
 linkon.addEventListener("click", (e) =>{
-    //calc.style.display = "block";
-    visible= true;
+    calc.style.display = "block";
+    //visible= true;
 });
 
 linkoff.addEventListener("click", (e) =>{
-    //calc.style.display = "none";
-    visible= false;
+    calc.style.display = "none";
+    //visible= false;
 });
-if (visible==true){
+/*if (visible==true){
     calc.style.display = "block";
 }
 if (visible==false){
     calc.style.display = "none";
-}
-*/
-linkon.Addeventlistener("click" , function() {
-    calc.style.display = "block";
-});
-linkoff.Addeventlistener("click" , function() {
-    calc.style.display = "none";
-});
+}*/
+
 
 // zone d'infos
 in1.addEventListener("mouseover", (e) =>{
@@ -56,10 +50,8 @@ button.addEventListener("mouseover", (e) =>{
 
 //calculatrice
 button.addEventListener("click", (e) =>{
-num1=in1.value;
-num1=parseFloat(num1);
-num2=in2.value;
-num2=parseFloat(num2);
+num1=parseInt(in1.value);
+num2=parseInt(in2.value);
     if(op.value=="+"){
         sum=num1+num2;
     }

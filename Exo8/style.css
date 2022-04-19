@@ -1,0 +1,20 @@
+body{
+    display: flex;
+}
+.limg{
+    width: 70%;
+}
+.limg img{
+    width: 70%;
+}
+.imgs{
+    display:flex;
+    flex-wrap:wrap;
+    width: 30%;
+}
+.imgs img{
+    width: 100%;
+}
+.img{
+    width: 50%;
+}
