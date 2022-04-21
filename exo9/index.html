@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculette</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form action="">
+        <h1>Calculer une TVA</h1>
+        <span class="col-3"><b>Montant Hors Taxes</b></span>
+        <span class="col-3"><b>Montant TVA</b></span>
+        <span class="col-3"><b>Montant TTC</b></span>
+        <hr>
+        <input type="number" class="col-3 enter" id="ht">
+        <span>+</span>
+        <input type="number" class="col-3 enter" id="tva">
+        <span>=</span>
+        <input type="number" class="col-3 enter" id="ttc">
+        <hr>
+        <span>Taux TVA</span>
+        <br>
+        <input type="number" class="col-3 enter" id="ttva" value="20">
+        <hr>
+        <input type="button" value="20%" class="but">
+        <input type="button" value="19.6%" class="but">
+        <input type="button" value="10%" class="but">
+        <input type="button" value="8.5%" class="but">
+        <input type="button" value="7%" class="but">
+        <input type="button" value="5.5%" class="but">
+        <hr>
+        <p id="mht"></p>
+        <p id="mtva"></p>
+        <p id="mttc"></p>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>
