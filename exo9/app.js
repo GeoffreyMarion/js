@@ -14,35 +14,30 @@ horstaxes.addEventListener("keyup",function(){
     _ht=parseFloat(horstaxes.value);
     _tva=parseFloat(_ttva)*_ht/100;
     _ttc=_ht+_tva;
-    //_ttva=_tva/_ht*100;
     tva.value=parseFloat(_tva);
     ttc.value=parseFloat(_ttc);
-    //tauxtva.value=parseFloat(_ttva);
 });
 
 tva.addEventListener("keyup",function(){
     _tva=parseFloat(tva.value);
     _ttva=_tva/_ht*100;
     _ttc=_ht+_tva;
-    horstaxes.value=parseFloat(_ht); 
     ttc.value=parseFloat(_ttc);
     tauxtva.value=parseFloat(_ttva);
 });
 
-//Cassé a modif
 ttc.addEventListener("keyup",function(){
     _ttc=parseFloat(ttc.value);
-    _ht=_ttc-_tva;
+    _ht=_ttc-(_ttva/100*_ttc)
+    _tva=_ht*_ttva/100;
     horstaxes.value=parseFloat(_ht);
-    //tva.value=parseFloat(_tva);
-    //tauxtva.value=parseFloat(_ttva);
+    tva.value=parseFloat(_tva);
 });
 
 tauxtva.addEventListener("keyup",function(){
     _ttva=parseFloat(tauxtva.value);
     _tva=_ttva*_ht/100;
     _ttc=_ht+_tva;
-    //horstaxes.value=_ht;
     tva.value=_tva;
     ttc.value=_ttc;
 });

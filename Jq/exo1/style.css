@@ -1,0 +1,18 @@
+.button{
+    width: 100px;
+    border: solid black 2px;
+}
+p{
+    width: 40%;
+    height: 50px;
+    line-height:50px;
+    text-align: center;
+}
+
+p.pal{
+    background-color:lightseagreen;
+}
+p.npal{
+    background-color:lightcoral;
+}
+}
