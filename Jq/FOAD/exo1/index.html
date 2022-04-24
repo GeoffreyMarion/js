@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Contact</title>
+</head>
+<body>
+    <form action="">
+        <label for="nom">Nom</label><br> 
+        <input type="text" id="name"></span><br><span id="_name"></span><br>
+        <label for="prenom">Prénom</label><br>
+        <input type="text" id="fname"><br><span id="_fname"></span><br>
+        <label for="email">E-mail</label><br>
+        <input type="email" id="email"><br><span id="_email"></span><br>
+        <label for="phone">Téléphone</label><br>
+        <input type="text" id="phone"><br><span id="_phone"></span><br>
+        <textarea name="message" id="message" cols="50" rows="10"></textarea>
+        <br><span id="_message"></span><br>
+        <input type="button" value="Envoyer" class="hide envoyer">
+    </form>
+    <div class="valide hide">
+        <p>"Merci <b></b>, votre message a été bien envoyé!"</p>
+        <img src="mail.jpg" alt="E-mail" >    
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+form{
+    padding-left: 50px;
+}
+p{
+    padding-left: 50px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+img{
+    width: 200px;
+    margin-left: 100px;
+}
+.valide{
+    background-color: chartreuse;
+}
+.invalide{
+    background-color: crimson;
+}
+span{
+    line-height: 20px;
+    text-align: center;
+    font-weight:600;
+}
