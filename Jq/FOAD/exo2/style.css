@@ -10,7 +10,6 @@ form{
     margin: 10px;
 }
 input#button{
-    background-color: crimson;
     color: white;
     font-size:medium;
     font-weight: 800;
@@ -48,4 +47,10 @@ div.affiche{
 }
 .show{
     display: block;
+}
+.invalide{
+    background-color: rgba(220, 20, 60, 0.5);
+}
+.valide{
+    background-color:rgba(128, 255, 0, 0.5);
 }

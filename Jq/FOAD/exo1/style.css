@@ -18,10 +18,10 @@ img{
     margin-left: 100px;
 }
 .valide{
-    background-color: chartreuse;
+    background-color: rgba(128, 255, 0, 0.5);
 }
 .invalide{
-    background-color: crimson;
+    background-color: rgba(220, 20, 60, 0.5);
 }
 span{
     line-height: 20px;

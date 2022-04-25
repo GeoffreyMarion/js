@@ -13,6 +13,7 @@ var blo3=false;
 var blo4=false;
 var blo5=false;
 
+//tests des divers inputs
 $("input#name").keyup(function(){
     if(!regexnom.test($("input#name").val())){
         $("#_name").text("nom invalide");
@@ -75,7 +76,6 @@ $("input#phone").keyup(function(){
 
 $("textarea#message").keyup(function(){
     tmots=$("textarea#message").val().split(" ");
-    console.log(tmots);
     mots=tmots.length;
     letters=$("textarea#message").val().length
     $("#_message").text("Message invalide");
@@ -86,14 +86,14 @@ $("textarea#message").keyup(function(){
         return blo5=false;
     }
     else{
-        $("#_message").text(mots+" "+"mot(s)"+letters+" "+"caractère(s)"+"/200");
+        $("#_message").text(mots+" "+"mot(s)"+" "+letters+" "+"caractère(s)"+"/200");
         $("#_message").removeClass("invalide");
         $("#_message").addClass("valide");
         return blo5=true;
     }
 });
-
-$("textarea#message").keyup(function(){
+//envoi du message
+$(".test").keyup(function(){
 if(blo1==true && blo2==true && blo3==true && blo4==true && blo5==true){
     $(".envoyer").show();
 }
@@ -106,5 +106,5 @@ $(".envoyer").click(function(){
     var prenom= $("#fname").val();
     $("form").addClass("hide");
     $("b").text(prenom);
-    $(".valide").show();
+    $(".pop").show();
 });
