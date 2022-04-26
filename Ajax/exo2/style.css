@@ -1,0 +1,36 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#etudiants{
+    background-color:gainsboro;
+    margin-left: 50px;
+    width: 25%;
+}
+#valides{
+    background-color: chartreuse;
+    margin-left: 50px;
+    width: 25%;
+}
+#invalides{
+    background-color: crimson;
+    margin-left: 50px;
+    width: 25%;
+}
+h3{
+    margin-left: 10px;
+}
+td{
+    border: solid black 1px;
+    text-align: center;
+    width: 50px;
+    height: 25px;
+}
+tr{
+    width: ;
+}
+table{
+    border: solid black 1px;
+}
+.buttons{
+    margin-left: 50px;
+}

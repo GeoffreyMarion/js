@@ -1,0 +1,39 @@
+{
+    "etudiants":[
+        {
+            "nom": "Johnson",
+            "prenom": "Bob",
+            "moyenne": 14
+        },
+        {
+            "nom": "Robson",
+            "prenom": "John",
+            "moyenne": 9
+        },
+        {
+            "nom": "Jackson",
+            "prenom": "Mikael",
+            "moyenne": 12
+        },
+        {
+            "nom": "Gomora",
+            "prenom": "Patrick",
+            "moyenne": 17
+        },
+        {
+            "nom": "Ivanovich",
+            "prenom": "Ivan",
+            "moyenne": 5
+        },
+        {
+            "nom": "Zorik",
+            "prenom": "Anya",
+            "moyenne": 19
+        },
+        {
+            "nom": "Dupont",
+            "prenom": "Jeanne",
+            "moyenne": 13
+        }
+    ]
+}
