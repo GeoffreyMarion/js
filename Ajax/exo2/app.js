@@ -43,7 +43,7 @@ $("button#moyenne").click(function(){
     let tdetudiants=$("table#etudiants td");
     console.log(tretudiants);
     
-    $.each(tetudiants,function(etudiants,tretudiants){
+    $.each(trtetudiants,function(index,value){
         
     });
 });

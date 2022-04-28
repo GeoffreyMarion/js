@@ -1,0 +1,24 @@
+.body{
+
+}
+.prod{
+    border: solid gainsboro 1px;
+    margin: 5px;
+    padding: 5px;
+}
+img{
+    width: 200px;
+    height:200px;
+}
+h3{
+    font-size: medium;
+}
+b{
+    margin-bottom: 5px;
+}
+.ajouter{
+
+}
+p{
+    text-align: center;
+}
