@@ -16,9 +16,23 @@ h3{
 b{
     margin-bottom: 5px;
 }
-.ajouter{
-
-}
 p{
+    text-align: center;
+}
+.article{
+    margin-bottom: 15px;
+    border: solid gainsboro 1px;
+    padding: 10px;
+}
+.droitehaut{
+    margin-bottom: 15px;
+}
+.apayer{
+    padding: 10px;
+    border-radius: 5px;
+    background-color:tomato;
+    border: solid red 1px;
+    color: aliceblue;
+    font-size: larger;
     text-align: center;
 }

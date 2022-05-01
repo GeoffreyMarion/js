@@ -30,7 +30,7 @@
                 <a class="nav-link disabled">Disabled</a>
               </li>
             </ul>
-              <button class="btn btn-outline-light tpannier" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasdroite" aria-controls="offcanvasRight" id="pannier">Voir mon pannier</button>
+              <button class="btn btn-outline-light panier" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasdroite" aria-controls="offcanvasRight">Voir mon panier</button>
           </div>
         </div>
     </nav>
@@ -52,7 +52,7 @@
 
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasdroite" aria-labelledby="offcanvasRight">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasLabel">Mon pannier</h5>
+          <h5 class="offcanvas-title" id="offcanvasLabel">Valider ma commande</h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body canevasdroit">
@@ -62,5 +62,56 @@
         </div>
       </div>
 
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasgauche" aria-labelledby="offcanvasLeft">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasLabel">Mon panier</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body canevasgauche">
+        <p>Veuillez entrer vos informations dans les champs de saisie ci-dessous.</p>
+        <form action="">
+          <div class="form-floating mb-3">
+            <input type="string" class="form-control" id="floatingName" placeholder="Nom">
+            <label for="floatingName">Nom</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="string" class="form-control" id="floatingfName" placeholder="Prénom">
+            <label for="floatingfName">Prénom</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+            <label for="floatingEmail">E-mail</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="tel" class="form-control" id="floatingTel" placeholder="0600000000">
+            <label for="floatingTel">Numéro de téléphone</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="string" class="form-control" id="floatingAdd" placeholder="10 rue du général de Gaules 75001 Paris">
+            <label for="floatingTel">Adresse</label>
+          </div>
+          <button class="btn btn-dark register" type="submit" data-bs-toggle="modal" data-bs-target="#Modal">Enregistrer</button>
+        </form>
+        </div>
+      </div>
+
+      <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Valider mes informations et mon panier</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="infos"></div>
+              <div class="recapanier"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+              <button type="button" class="btn btn-dark payer" data-bs-toggle="modal" data-bs-target="#Modal">Valider et payer</button>
+            </div>
+          </div>
+        </div>
+      </div>
 </body>
 </html>

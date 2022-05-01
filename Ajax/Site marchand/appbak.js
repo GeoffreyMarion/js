@@ -71,30 +71,34 @@ $(".prod").each(function(index) {
         articles.push(index);
         console.log(articles);
         totalprix();
-        //affiche le offcanvas droit
-        var contenubas="";
-        const but='<button class="btn btn-dark commande" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasgauche" aria-controls="offcanvasLeft">Valider la commande</button>'
-        const supr='<button class="btn btn-outline-danger supprimer col-3 offset-md-1" type="button">supprimer</button>';
-        $(articles).each(function (index) {
-            var nomp=produit[articles[index]].nom;
-            var prix=produit[articles[index]].prix;
-            //si article non présent
-            if(1==1){
-                contenubas+= "<div class='article'><div class='row justify-content-start'><p class='col-7'>Nom: <b>"+nomp+"</b></p>"+supr+"</div><br> Quantité <input value='1'></input><br> Prix:<b>"+prix+"</b> €</div>";
-            }
-            //si article déjà présent
-            else{
-                ("input").value++
-            }
-            //affiche prix total plus valider la commande
-            $(".contenudroitbas").html(contenubas);
-            $(".contenudroithaut").html("<div class='droitehaut'><h4>Total: "+totprix+" €</h4>"+but+"</div>");
-        });
     });
 });
+
+
 //desactive submit sur les boutons
 $("button").click(function (e) { 
     e.preventDefault();
+});
+//affiche le offcanvas droit
+$(".add_panier").click(function (element) { 
+    var contenubas="";
+    const but='<button class="btn btn-dark commande" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasgauche" aria-controls="offcanvasLeft">Valider la commande</button>'
+    const supr='<button class="btn btn-outline-danger supprimer col-3 offset-md-1" type="button">supprimer</button>';
+    $(articles).each(function (index) {
+        var nomp=produit[articles[index]].nom;
+        var prix=produit[articles[index]].prix;
+        //si article non présent
+        if(1==1){
+        contenubas+= "<div class='article'><div class='row justify-content-start'><p class='col-7'>Nom: <b>"+nomp+"</b></p>"+supr+"</div><br> Quantité <input value='1'></input><br> Prix:<b>"+prix+"</b> €</div>";
+        }
+        //si article déjà présent
+        else{
+            ("input").value++
+        }
+        //affiche prix total plus valider la commande
+        $(".contenudroitbas").html(contenubas);
+        $(".contenudroithaut").html("<div class='droitehaut'><h4>Total: "+totprix+" €</h4>"+but+"</div>");
+    });
 });
 //Boutton supprimer, update le prix total et supprime la div (Non fonctionnel)
 $(".supprimer").click(function (element) { 
@@ -115,9 +119,9 @@ $(".register").click(function (element) {
     $(articles).each(function (index) {
         var nomp=produit[articles[index]].nom;
         var prix=produit[articles[index]].prix;
-        contenu+= "<div class='article'><p class='col-10'>Nom: <b>"+nomp+"</b></p><br><div class='row justify-content-start'><p class='col-4'>Prix: <b>"+prix+"</b> €</p><p class='col-4'>Quantité: <b>1</b></p></div></div><hr>";
+        contenu+= "<div class='article'><p class='col-10'>Nom: <b>"+nomp+"</b></p><br><div class='row justify-content-start'><p class='col-4'>Prix:<b>"+prix+"</b> €</p><p class='col-4'>Quantité: <b>1</b></p></div></div><hr>";
     });
-    $(".recapanier").html("<h3>Votre panier</h>"+contenu+"<div class='apayer'>Toyal à payer:"+totprix+" €");
+    $(".recapanier").html("<h3>Votre panier</h>"+contenu+"<div class='payer'>Toyal à payer:"+totprix+" €");
 });
 //Envoi l'alerte pour dire que la commande est passée
 $(".payer").click(function (element) { 
